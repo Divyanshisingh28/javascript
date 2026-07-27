@@ -25,8 +25,21 @@ let myobj = {
     age: 18
 }
 console.log(myobj)
-let myfunction = function(){
+let myfunction = function () {
     console.log("Hello world")
 }
 myfunction();
 console.log(typeof arr)
+
+
+// ************************************************* MEMORY ************************************************
+
+// 1. stack (primitive) : isme copy milta hai orignal me kuch change nahi aata
+// 2. heap (non primitive) : isme agar hum changes karte hain toh orignal value me bhi change aata hai
+let user1 = {
+    upi :"div",
+    id : 123
+}
+let user2 = user1
+user2.upi = "divyanshi"
+console.log(user1,user2) // dono variables me value change ho gayi 
