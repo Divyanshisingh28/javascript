@@ -15,3 +15,8 @@ console.log(Math.pow(10,2))
 console.log(Math.round(5.97,2)) // 2 digits takk round off karwana hai tab 
 console.log(Math.floor(8.9))
 console.log(Math.random()) // values 0 aur 1 ke beech me aati haii 
+
+const max = 6
+const min = 1
+
+console.log(Math.floor(Math.random() * (max - min +1)) + min)
