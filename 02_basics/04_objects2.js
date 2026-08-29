@@ -58,3 +58,19 @@ console.log(Object.keys(TinderUser)) // returns the value in the form of an arra
 console.log(Object.values(TinderUser))
 console.log(Object.entries(TinderUser))
 console.log(TinderUser.hasOwnProperty("isnot"))  // to check if an object has this key or not 
+
+const course ={
+    coursename: "js hindi",
+    price: 1900,
+    teacher: "hitesh "
+}
+
+// accessing elements 2nd way which is cleaner: destructuring 
+const{teacher} = course
+console.log(teacher)
+const{price: rate} = course // accessing value by changing the name of elements
+console.log(rate)
+// destructuring is imp in react and whenever curly braces {} are used that means destructuring is done
+
+//json : javascript object notation 
+// {} iss format me diya jaata hai [] isme bhi available ho skta hai 
