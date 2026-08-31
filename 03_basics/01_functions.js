@@ -46,3 +46,26 @@ console.log(sum)
 //...num1 is a rest operator, agar arguments kam hain aur parameters jyaada hain toh baaki ke arguments arrays me convert kar deta hai 
 // vvimp in e commerce website jab user cart me items add karta jaaye 
 
+
+// object in a function 
+const user = {
+    name:"divyanshi",
+    email:"divyanshi@123",
+    id:"123abc"
+}
+
+function tinder(username,email){
+    console.log(`${username} just logged in with email ${email}`)
+} 
+//or {username.name} & {username.email} and then while calling function just enter user.
+
+tinder(user.name,user.email)
+// we an create a new object while we call the function.
+
+//array in function 
+const costs = [200,3000,50,100]
+function prices(cost){
+   console.log(`the price of above item is ${cost[1]}`)
+}
+prices(costs) // direct array bhi pass kar skte hain 
+
