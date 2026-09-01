@@ -15,3 +15,28 @@ console.log(b) //it works
 //we can access b outside the scope meaning it can create confusion in the code and hence let is used instead of var 
 // when we print b tab bhi 20 aaya instead of 300 jo aana chahiye tha normal programming lang ke rules ke basis pe
 // we use let jisse hum local scope aur global scope ke variables ko alag alag rakh  paaye 
+
+//function in function 
+
+function one(){
+    const username="divyanshi"
+    function two(){
+        const website="youtube"  // nested variables use concept, same happens in if else and loops as well
+        console.log(username)
+    }
+    //console.log(website) error
+    two()
+}
+//one()  
+ 
+// ++++++++++++++++++++++++++++++++++++ interesting point +++++++++++++++++++++++++++++++++++
+console.log(addone(5)) // executed
+function addone(num){
+    return num+1
+}
+console.log(addtwo(5)) // gives error (hoisting concept )
+const funct = function addtwo(num){ // this is an expression as the variable is holding a function
+    return num+2
+}
+
+
