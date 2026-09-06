@@ -1,4 +1,5 @@
 //for each loop (most used loop in arrays)
+//very important in arrays 
 
 const arr1 = [177,800,766,34,1,24556]
 arr1.forEach( function (key){
@@ -36,5 +37,6 @@ const myarr =[
     }
 ]
 myarr.forEach((key) => {
-    console.log(key.firstname)
+    console.log(key.firstname) // firstname first object se aagya aur baaki objects se undefined aaya
+    console.log(key)
 })
