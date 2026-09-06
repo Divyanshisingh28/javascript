@@ -29,7 +29,7 @@ one()
 two()
 
 //implicit return :- jab ek hi line ka function ho tab use hota hai 
-const three = (num1,num2) => num1+num2
+const three = (num1,num2) => num1+num2 // bina curly braces ke hai issliye return hogya khudh se
 console.log(three(3,4))
 
 // if we use curly braces then we will have to write  return otherwise not necessary(for one line functions onlyy)
@@ -41,5 +41,5 @@ const name = () =>({
 console.log(name()) // undefined object return karne ke liye parantheses ka use karna padta hai 
 
 //arrow function syntax
-// () => {}
+// () => {} when we need to return an object
 // () => () when we need to return an object
