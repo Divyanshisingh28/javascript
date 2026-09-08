@@ -1,5 +1,5 @@
 //for each loop (most used loop in arrays)
-//very important in arrays 
+//very important in arrays :- keys se direct access milta hai array elements ka 
 
 const arr1 = [177,800,766,34,1,24556]
 arr1.forEach( function (key){
